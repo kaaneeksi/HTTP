@@ -82,6 +82,8 @@
 
 # HTTP Headers
 
+![HTTTP-header](https://github.com/kaaneeksi/HTTP/blob/main/G%C3%B6rseller/HTTP%20Header.png?raw=true)
+
 1. **Accept:**
     - İstemcinin hangi türde içeriği kabul ettiğini belirtir. Örneğin, tarayıcı "text/html" ve "application/json" gibi medya türlerini destekleyebilir.
     - Örnek: `Accept: text/html, application/xhtml+xml, application/xml;q=0.9, image/webp;q=0.8`
