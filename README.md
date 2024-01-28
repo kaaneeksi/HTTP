@@ -77,3 +77,47 @@
 
    - **503 Service Unavailable:** Sunucu geçici olarak hizmet veremiyor.
      - *Örnek:* Bakım nedeniyle geçici olarak sunucu hizmet dışıysa "503 Service Unavailable" durum kodu kullanılabilir.
+
+---
+
+# HTTP Headers
+
+1. **Accept:**
+    - İstemcinin hangi türde içeriği kabul ettiğini belirtir. Örneğin, tarayıcı "text/html" ve "application/json" gibi medya türlerini destekleyebilir.
+    - Örnek: `Accept: text/html, application/xhtml+xml, application/xml;q=0.9, image/webp;q=0.8`
+
+2. **Content-Type:**
+    - Sunucuya gönderilen verinin türünü belirtir. Örneğin, bir form gönderiliyorsa `application/x-www-form-urlencoded` olabilir, ya da bir dosya yükleniyorsa `multipart/form-data` olabilir.
+    - Örnek: `Content-Type: application/json`
+
+3. **User-Agent:**
+    - İstemcinin kullandığı tarayıcı veya uygulama hakkında bilgi verir. Sunucular, bu bilgiyi istemcileri tanımak veya uyumlu bir yanıt sağlamak için kullanabilir.
+    - Örnek: `User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.1234.56 Safari/537.36`
+
+4. **Authorization:**
+    - İstemcinin kimlik doğrulama bilgilerini içerir. Genellikle kullanıcı adı ve şifre gibi bilgileri şifreleyerek gönderir.
+    - Örnek: `Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==`
+
+5. **Cookie:**
+    - Tarayıcı tarafından sunucuya gönderilen çerezleri içerir. Çerezler, oturum bilgileri veya tercihleri saklamak için kullanılır.
+    - Örnek: `Cookie: session_id=abc123; user_id=987`
+
+6. **Location:**
+    - Sunucu tarafından yönlendirme durumlarında kullanılır. İstemciyi belirli bir konuma yönlendirmek için kullanılır.
+    - Örnek: `Location: https://yenikonum.com`
+
+7. **Cache-Control:**
+    - Önbellek kontrolünü yönetir. Sunucu, tarayıcıdan içeriği önbelleklememesini, her zaman önbelleği güncellemesini veya bir süre boyunca önbelleği kullanmasını isteyebilir.
+    - Örnek: `Cache-Control: no-cache, no-store, must-revalidate`
+
+8. **ETag:**
+    - Kaynağın benzersiz tanımlayıcısını içerir. Önbellek kontrolünde kullanılır, yani sunucu ve tarayıcı arasında sadece değişiklik yapıldığında veriyi almak için kullanılır.
+    - Örnek: `ETag: "abcdef"`
+
+9. **Server:**
+    - Sunucu tarafından kullanılan web sunucusunun bilgisini içerir. Bu, sunucunun hangi yazılımı kullandığını belirtebilir.
+    - Örnek: `Server: Apache/2.4.29 (Ubuntu)`
+
+10. **Date:**
+    - Yanıtın oluşturulma tarihini içerir. Bu, tarayıcıya ne kadar süre önce yanıt verildiğini belirtir.
+    - Örnek: `Date: Fri, 28 Jan 2024 12:34:56 GMT`
